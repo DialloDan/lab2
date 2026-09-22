@@ -21,8 +21,9 @@
 - Версія 0.3.0 — Додано нову функцію зі складним типом
 - Версія 0.4.0 — Додано інтерфейс та generic
 - Версія 0.5.0 — Додано клас `Logger` та змінні оточення (`.env`)
-- Версія 1.0.0 — Стабілізував публічне API та посилив правила
-- Версія 2.0.0 — Змінив сигнатуру add
+- Версія 1.0.0 — Стабілізував публічне `API` та посилив правила
+- Версія 2.0.0 — Змінив сигнатуру `add`
+- Версія 2.0.[1-4] — Оновив `README`
 
 ## Приклади використання функцій
 
@@ -48,8 +49,8 @@
 
 `.env` ключі це:
 
-- APP_PRECISION // number
-- LOG_LEVEL // 'silent'|'info'|'debug' string
+- `APP_PRECISION` // number
+- `LOG_LEVEL` // 'silent'|'info'|'debug' string
 
 ## Посилання на теги релізів
 
@@ -60,3 +61,7 @@
 - [v0.5.0](https://github.com/DialloDan/lab2/tree/v0.5.0)
 - [v1.0.0](https://github.com/DialloDan/lab2/tree/v1.0.0)
 - [v2.0.0](https://github.com/DialloDan/lab2/tree/v2.0.0)
+- [v2.0.1](https://github.com/DialloDan/lab2/tree/v2.0.1)
+- [v2.0.2](https://github.com/DialloDan/lab2/tree/v2.0.2)
+- [v2.0.3](https://github.com/DialloDan/lab2/tree/v2.0.3)
+- [v2.0.4](https://github.com/DialloDan/lab2/tree/v2.0.4)
