@@ -16,74 +16,33 @@
 
 ## Огляд кроків еволюції
 
-Версія 0.1.0 — Додано прості функції з `any`
-
-Версія 0.2.0 — Змінено функції з `any` на функції з базовими типами
-
-Версія 0.3.0 — Додано нову функцію зі складним типом
-
-Версія 0.4.0 — Додано інтерфейс та generic
-
-Версія 0.5.0 — Додано клас `Logger` та змінні оточення (`.env`)
-
-Версія 1.0.0 — Стабілізував публічне API та посилив правила
-
-Версія 2.0.0 — Змінив сигнатуру add
+- Версія 0.1.0 — Додано прості функції з `any`
+- Версія 0.2.0 — Змінено функції з `any` на функції з базовими типами
+- Версія 0.3.0 — Додано нову функцію зі складним типом
+- Версія 0.4.0 — Додано інтерфейс та generic
+- Версія 0.5.0 — Додано клас `Logger` та змінні оточення (`.env`)
+- Версія 1.0.0 — Стабілізував публічне API та посилив правила
+- Версія 2.0.0 — Змінив сигнатуру add
 
 ## Приклади використання функцій
 
-Приклад `add`:
+- Приклад `add`: `console.log('sum(2.0 ok):', add([5, 6, -8]));`  
+  Результат: `sum(2.0 ok): 3`
 
-`console.log('sum(2.0 ok):', add([5, 6, -8]));`
+- Приклад `capitalize`: `console.log('capitalize(typed):', capitalize('watermelon'));`  
+  Результат: `capitalize(typed): Watermelon`
 
-Результат:
+- Приклад `formatNumber`: `console.log('format(ok):', formatNumber(321.456789));`  
+  Результат: `format(ok): 321.457`
 
-`sum(2.0 ok): 3`
+- Приклад `groupBy`: `console.log('group ok:', groupBy(users, 'name'));`  
+  Результат: `group ok: { Alice: [ { id: 1, name: 'Alice' } ], Bob: [ { id: 2, name: 'Bob' } ] }`
 
-Приклад `capitalize`:
+- Приклад `Logger.info`: `logger.info('Application started');`  
+  Результат: `[INFO] Application started`
 
-`console.log('capitalize(typed):', capitalize('watermelon'));`
-
-Результат:
-
-`capitalize(typed): Watermelon`
-
-Приклад `formatNumber`:
-
-`console.log('format(ok):', formatNumber(321.456789));`
-
-Результат:
-
-`format(ok): 321.457`
-
-Приклад `groupBy`:
-
-`console.log('group ok:', groupBy(users, 'name'));`
-
-Результат:
-
-```
-group ok: {
-  Alice: [ { id: 1, name: 'Alice' } ],
-  Bob: [ { id: 2, name: 'Bob' } ]
-}
-```
-
-Приклад `Logger.info`:
-
-`logger.info('Application started');`
-
-Результат:
-
-`[INFO] Application started`
-
-Приклад `Logger.debug`:
-
-`logger.debug('Extra debug info');`
-
-Результат:
-
-`[DEBUG] Extra debug info`
+- Приклад `Logger.debug`: `logger.debug('Extra debug info');`  
+  Результат: `[DEBUG] Extra debug info`
 
 ## Нотатка про `.env`
 
