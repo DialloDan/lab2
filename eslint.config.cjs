@@ -1,3 +1,4 @@
+const globals = require('globals');
 const js = require('@eslint/js');
 const tseslint = require('typescript-eslint');
 const prettier = require('eslint-config-prettier');
@@ -8,8 +9,12 @@ module.exports = [
   ...tseslint.configs.recommended, // базові правила TS
   prettier, // відключення конфліктів з Prettier
   {
-    files: ['**/*.ts'],
+    files: ['**/*.{js,ts}'],
     languageOptions: {
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+      },
       parser: tseslint.parser,
       parserOptions: {
         ecmaVersion: 'latest',
@@ -21,7 +26,7 @@ module.exports = [
     },
 
     rules: {
-      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-explicit-any': 'error',
       'no-unused-vars': 'warn',
     },
   },
